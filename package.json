@@ -1,0 +1,19 @@
+{
+  "name": "l298n-controller-pi",
+  "version": "0.0.1",
+  "description": "Controller to drive L298N connected motors over wireless network",
+  "main": "src/l298n-controller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "wiring-pi": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhishekkumardwivedi/l298n-controller-pi"
+  },
+  "author": "Abhishek Dwivedi",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
