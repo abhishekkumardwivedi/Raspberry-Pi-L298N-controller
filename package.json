@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "wiring-pi": "*"
+    "wiring-pi": "*",
+    "mqtt": "",
+    "daemon": "",
+    "mosca":""
   },
   "repository": {
     "type": "git",

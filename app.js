@@ -70,7 +70,7 @@ const client = mqtt.connect('mqtt://192.168.0.100')
 client.on('connect', function () {
   client.subscribe('to/l298n/rovar/#')
 
-  client.publish('status/l298n/rovar/connection', 'true')
+  client.publish('state/l298n/rovar/connection', 'true')
   sendStateUpdate()
 })
 
