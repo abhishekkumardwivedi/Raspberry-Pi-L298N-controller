@@ -28,3 +28,12 @@ L298N is an H-bridge bidirectional motor driver.
 
 ![L298N motor driver](L298n.jpg)
 
+## Robot hardware
+Robot with complete hardware setup
+
+![Robot side view](robo-side.jpg)
+![Robot top view](robo-top.jpg)
+
+## Conclusion
+
+This project doesn't do much but shows automation over cloud. But the use case and scalablity is much larger.
