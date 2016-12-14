@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.oerdev.truckcontroller.ControllerDashboard">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <Button
+            android:text="Left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/left"
+            android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_toLeftOf="@+id/stop"
+
+            android:layout_toStartOf="@+id/stop"/>
+    <Button
+            android:text="Right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/right"
+            android:layout_alignBaseline="@+id/left" android:layout_alignBottom="@+id/left"
+            android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/stop" android:layout_toEndOf="@+id/stop"/>
+    <Button
+            android:text="Move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="39dp" android:id="@+id/move"
+            android:layout_above="@+id/right" android:layout_alignLeft="@+id/stop"
+            android:layout_alignStart="@+id/stop"
+            android:textColor="@android:color/holo_green_dark" android:elevation="0dp"/>
+    <TextView android:id="@+id/fullscreen_content"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:keepScreenOn="true"
+              android:textColor="#33b5e5"
+              android:textStyle="bold"
+              android:textSize="50sp"
+              android:gravity="center"
+              android:text="My Robot"
+              android:layout_above="@+id/move" android:layout_alignParentLeft="true"
+              android:layout_alignParentStart="true" android:layout_marginBottom="32dp"/>
+    <Button
+            android:text="Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stop"
+            android:textColor="@android:color/holo_red_dark" android:layout_below="@+id/move"
+            android:layout_centerHorizontal="true"/>
+    <Button
+            android:text="Reverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_below="@+id/right"
+            android:layout_toRightOf="@+id/left" android:layout_toEndOf="@+id/left"
+            android:layout_marginTop="46dp" android:id="@+id/reverse"/>
+    <Button
+            android:text="Connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp" android:layout_marginStart="28dp"
+            android:id="@+id/connect" android:layout_alignBottom="@+id/editTextBroker"
+            android:layout_toRightOf="@+id/editTextBroker"
+            android:layout_toEndOf="@+id/editTextBroker"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_marginBottom="47dp" android:id="@+id/editTextBroker"
+            tools:text="192.168.0.101"
+            android:layout_alignParentBottom="true" android:layout_alignRight="@+id/reverse"
+            android:layout_alignEnd="@+id/reverse"/>
+
+</RelativeLayout>

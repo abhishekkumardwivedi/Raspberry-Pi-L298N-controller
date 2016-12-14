@@ -64,34 +64,9 @@ l298n.setSpeed(speed)
 
 // MQTT ----------------
 
-/*
-client.on('connect', function () {
-  client.subscribe('to/l298n/rovar/#')
-
-  client.publish('state/l298n/rovar/connection', 'true')
-  sendStateUpdate()
-})
-
-client.on('message', function (topic, message) {
-  console.log('received message %s %s', topic, message)
-  switch (topic) {
-    case 'to/l298n/rovar/forward':
-      return moveForward()
-    case 'to/l298n/rovar/backward':
-      return moveBackward()
-    case 'to/l298n/rovar/stop':
-      return moveStop()
-    case 'to/l298n/rovar/right':
-      return moveRight()
-    case 'to/l298n/rovar/left':
-      return moveLeft()
-  }
-})
-*/
-
 var mqtt = require('mqtt');
 
-var client = mqtt.connect('mqtt://139.59.8.130:1883');
+var client = mqtt.connect('mqtt://192.168.0.101:1883');
 
 client.on('connect', function() {
   
