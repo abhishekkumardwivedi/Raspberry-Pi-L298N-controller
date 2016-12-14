@@ -19,20 +19,20 @@ We will be using four GPIO pins.
 * GPIO9 and GPIO10 for motor B.
 
 
-![Raspberry Pi GPIOs](RaspberryPi_pinput.png)
+![Raspberry Pi GPIOs](doc/RaspberryPi_pinput.png)
 
 ### L298N H-bridge
 L298N is an H-bridge bidirectional motor driver.
 
 * We are going to use motor A nad motor B interface pins. Will use jumper for motor A and so for motor B to make enable PWM.
 
-![L298N motor driver](L298n.jpg)
+![L298N motor driver](doc/L298n.jpg)
 
 ## Robot hardware
 Robot with complete hardware setup
 
-![Robot side view](robo-side.jpg)
-![Robot top view](robo-top.jpg)
+![Robot side view](doc/robo-side.jpg)
+![Robot top view](doc/robo-top.jpg)
 
 ## Conclusion
 
