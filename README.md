@@ -34,6 +34,10 @@ Robot with complete hardware setup
 ![Robot side view](doc/robo-side.jpg)
 ![Robot top view](doc/robo-top.jpg)
 
+# Android application
+Compile android/TruckController application. Make sure to change broker IP address as you will be using.
+![Android controller app](doc/android_app.jpg)
+
 ## Conclusion
 
 This project doesn't do much but shows automation over cloud. But the use case and scalablity is much larger.
