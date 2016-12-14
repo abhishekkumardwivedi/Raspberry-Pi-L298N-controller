@@ -36,7 +36,7 @@ Robot with complete hardware setup
 
 # Android application
 Compile android/TruckController application. Make sure to change broker IP address as you will be using.
-![Android controller app](doc/android_app.jpg)
+![Android controller app](doc/android_app.png)
 
 ## Conclusion
 
